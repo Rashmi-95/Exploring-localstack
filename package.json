@@ -1,0 +1,29 @@
+{
+  "name": "local-aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.344.0",
+    "fs": "^0.0.1-security",
+    "os": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rashmi-95/Exploring-localstack.git"
+  },
+  "keywords": [
+    "aws",
+    "localstack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rashmi-95/Exploring-localstack/issues"
+  },
+  "homepage": "https://github.com/Rashmi-95/Exploring-localstack#readme"
+}

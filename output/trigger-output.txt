@@ -1,0 +1,2 @@
+
+{"statusCode":200,"body":"{\"message\":{\"executionArn\":\"arn:aws:states:local:0123456789:execution:refresh-cache-state-machine:TestExecution2779\",\"startDate\":\"2018-10-29T03:50:10.511Z\"}}"}

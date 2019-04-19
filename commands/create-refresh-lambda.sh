@@ -1,0 +1,1 @@
+aws lambda --endpoint http://0.0.0.0:4574 create-function --function-name refreshFunction --runtime nodejs8.10 --role success-role --handler index.handler --zip-file fileb://refresh-lambda/refreshLambda.zip

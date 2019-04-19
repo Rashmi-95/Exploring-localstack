@@ -1,0 +1,5 @@
+cat <<EOF | xargs -0 aws stepfunctions --endpoint http://0.0.0.0:4584 create-state-machine --name refresh-cache-state-machine --role-arn arn:aws:iam::0123456789:role/service-role/MyRole --definition 
+{"Comment":"refresh cache Step Function","StartAt":"refreshCache","States":{"refreshCache":{"Type":"Task","Resource":"arn:aws:lambda:us-east-2:000000000000:function:refreshFunction","TimeoutSeconds":5,"Retry":[{"ErrorEquals":["States.Timeout"],"IntervalSeconds":10,"MaxAttempts":5,"BackoffRate":2}],"Catch":[{"ErrorEquals":["States.ALL"],"Next":"Fail"}],"End":true},"Fail":{"Type":"Fail","Error":"Error","Cause":"error"}}}
+EOF
+
+aws stepfunctions --endpoint http://0.0.0.0:4584 start-execution --state-machine-arn arn:aws:states:us-east-2:0123456789:stateMachine:refresh-cache-state-machine --name refresh-cache-execution

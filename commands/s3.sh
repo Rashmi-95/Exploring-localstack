@@ -1,0 +1,1 @@
+aws s3api create-bucket --bucket test --create-bucket-configuration LocationConstraint=us-east-1 --endpoint http://0.0.0.0:4572
