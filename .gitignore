@@ -1,1 +1,9 @@
 ./node_modules
+
+./services/lambda/refresh-lambda/node_modules
+./services/lambda/refresh-lambda/refreshLambda.zip
+
+./services/lambda/simple-lambda/simpleLambda.zip
+
+./services/lambda/trigger-lambda/node_modules
+./services/lambda/trigger-lambda/triggerLambda.zip
